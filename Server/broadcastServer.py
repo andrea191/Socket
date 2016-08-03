@@ -11,7 +11,7 @@ s.bind((host, port))
 while 1:
     try:
         message, address = s.recvfrom(8192)
-        print "Got data from", address
+        print "Got data from", address, message
         # Acknowledge it.
         s.sendto("I am here", address)
     except (KeyboardInterrupt, SystemExit):
