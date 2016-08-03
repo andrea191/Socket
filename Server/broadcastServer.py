@@ -1,7 +1,7 @@
 import socket, traceback
 
 host = ''                               # Bind to all interfaces
-port = 51423
+port = 10000
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
